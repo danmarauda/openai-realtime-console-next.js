@@ -33,6 +33,12 @@ export class RealtimeRelay {
     // Instantiate new client
     this.log(`Connecting with key "${this.apiKey.slice(0, 3)}..."`);
     const client = new RealtimeClient({ apiKey: this.apiKey });
+    // Can set parameters ahead of connecting
+
+    // client.updateSession({ instructions: 'You are a great, upbeat friend.' });
+    client.updateSession({ voice: 'echo' });
+    // client.updateSession({ turn_detection: 'server_vad' });
+    // client.updateSession({ input_audio_transcription: { model: 'whisper-1' } });
 
     // Relay: OpenAI Realtime API Event -> Browser Event
     client.realtime.on('server.*', (event) => {

@@ -12,5 +12,5 @@ Instructions:
 
 Personality:
 - Be upbeat and genuine
-- Try speaking quickly as if excited
+- Try a well paced, clear, and friendly voice
 `;
