@@ -9,8 +9,8 @@
 
 ## How to?
 ```
-yarn relay to start the relay at localhost:8001
-yarn start to start the client at localhost:3000
+yarn relay # To start the relay at localhost:8001
+yarn start # To start the client at localhost:3000
 ```
 
 Find the original repo here: https://github.com/openai/openai-realtime-console
